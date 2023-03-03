@@ -1,0 +1,46 @@
+#include <iostream>
+#define num 100 
+using namespace std;
+int main(){
+    int n,arr[num],i=0,j,r;
+    cin>>n;
+    while (n!=0){
+        r=n%10;
+        arr[i]=r;
+        i++;
+        n/=10;
+    }
+    for(j=i-1;j>-1;j--){
+        switch(arr[j]){
+            case 1:
+            cout<<"One";
+            break;
+            case 2:
+            cout<<"Two";
+            case 3:
+            cout<<"Three";
+            break;
+            case 4:
+            cout<<"Four";
+            break;
+            case 5:
+            cout<<"Five";
+            case 6:
+            cout<<"Six";
+            break;
+            case 7:
+            cout<<"Seven";
+            break;
+            case 8:
+            cout<<"Eight";
+            break;
+            case 9:
+            cout<<"Nine";
+            break;
+            default:
+            cout<<"Zero";
+        }
+        cout<<" ";
+    }
+	return 0;
+}
