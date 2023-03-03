@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class Drinks{
+    public:void Shop(){
+        int n,a,b,c;
+        cin>>n>>a>>b>>c;
+        a/=2;
+        int count=0;
+        for(int i=0;i<=a;i++){
+            for(int j=0;j<=c;j++){
+                int s = n-i-j*2;
+                if(s>=0 && s<=b){
+                    count++;
+                }
+            }
+        }
+        cout<<count;
+    }
+};
+int main()
+{   Drinks Buy;
+    Buy.Shop();
+
+	return 0;
+}
