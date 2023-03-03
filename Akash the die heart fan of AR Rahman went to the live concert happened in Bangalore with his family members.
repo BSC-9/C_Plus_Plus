@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{   int nooffamilymembers;
+    cin>>nooffamilymembers;
+    for (int i = nooffamilymembers;i>=0;i--) {
+        for (int j = (i-1);j>=0;j--){
+        cout<<i<<" ";
+        }
+        cout<<"\n";
+    }
+
+	return 0;
+}
