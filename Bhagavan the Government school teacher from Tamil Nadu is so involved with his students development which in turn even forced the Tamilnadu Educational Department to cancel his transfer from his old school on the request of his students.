@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+class student{
+    public:
+    int roll;
+    float height,weight;
+    string name;
+    student(){name="Bhagavan";roll=1593;height=172.5;weight=60.4;}
+    void read(){
+        cin>>name>>roll>>height>>weight;
+    }
+    void displaydata(){
+        cout<<name<<" "<<roll<<" "<<height<<" "<<weight;
+    }
+};
+
+int main(){
+    student s1,s2;
+    s1.read();
+    s1.displaydata();
+    cout<<endl;
+    s2.displaydata();
+	return 0;}
