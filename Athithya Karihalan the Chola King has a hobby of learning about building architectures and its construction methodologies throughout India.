@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class Building{
+    public:
+    int a,b,c,price;
+    void calculateCost(){
+        cin>>a>>b>>c;
+        price=a*b*c;
+        cout<<"Cost of the Building : "<<price<<endl;
+    }
+    void determineSuitability(){
+        if(((a-b)>10)||((b-a)>10)){
+            cout<<"Stability : Not Suitable";
+        }
+        else{
+            cout<<"Stability : Suitable";
+        }
+    }
+};
+int main()
+{   Building construction;
+construction.calculateCost();
+construction.determineSuitability();
+
+	return 0;
+}
