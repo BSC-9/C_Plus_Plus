@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int number,sum,dig=0,rem;
+    cin>>number;
+    int temp=number;
+    while(number!=0){
+        rem=number%10;
+        dig=dig*10+rem;
+        number/=10;
+    }
+    while(dig!=0){
+        rem=dig%10;
+        sum+=(rem*rem*rem);
+        dig/=10;
+    }
+    if(sum==temp){
+        cout<<"Part of Memorable Coin";
+    }
+    else{
+        cout<<"Not a Part of Memorable Coin";
+    }
+	return 0;
+}
