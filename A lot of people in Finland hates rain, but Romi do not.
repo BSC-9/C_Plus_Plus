@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+class Rain{
+    public:void Cup(){
+    int d,h,v,e;
+    cin>>d>>h>>v>>e;
+    double PI=acos(-1.0);
+    d=d*d/4;
+    long double f=PI*d*e,a=(PI*d*h)/(v-f);
+    (f>v)?(cout<<"NO"):(cout<<"YES"<<endl<<setprecision(11)<<a);
+    }
+};
+
+int main()
+{Rain MakingEmpty;
+MakingEmpty.Cup();
+	return 0;}
