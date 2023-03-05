@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+class house{
+    public:
+    int hno,num,sup;
+    int arr[100];
+    string cty,state,name;
+    void input();
+    void display();
+};
+void house::input(){
+    cin>>name;
+    cin>>hno>>cty>>state;
+    cin>>num;
+    sup=0;
+    for(int i=1;i<=num;i++){
+        int a,b,c;
+        cin>>a>>b>>c;
+        arr[sup]=a;
+        sup++;
+        arr[sup]=b;
+        sup++;
+        arr[sup]=c;
+        sup++;
+    }
+}
+void house::display(){
+    cout<<"House name="<<name<<endl
+        <<"House No="<<hno<<endl
+        <<"City="<<cty<<endl
+        <<"State="<<state<<endl;
+    sup=0;
+    for(int j=1;j<=num;j++){
+        cout<<"Detail of Room "<<j<<endl;
+        cout<<"Length="<<arr[sup]<<endl;
+        sup++;
+        cout<<"Breadth="<<arr[sup]<<endl;
+        sup++;
+        cout<<"Height="<<arr[sup]<<endl;
+        sup++;
+    }
+        
+}
+int main()
+{
+    house hello;
+    hello.input();
+    hello.display();
+	return 0;
+}
