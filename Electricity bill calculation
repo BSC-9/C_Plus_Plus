@@ -1,0 +1,33 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+class Electricity {
+    public:
+    int unit;
+    double price;
+    void get_details(){
+        cin>>unit;
+    }
+    void print_bill();
+};
+    void Electricity::print_bill(){
+        if(unit>= 100 && unit<=300) {
+                price = 0.40 * unit;
+            }
+            else {
+                price = unit * 0.60;
+            }
+            cout << fixed << setprecision(1) << price << endl;
+        }
+
+int main() {
+    int i,num;
+    cin>>num;
+    Electricity e[10];
+    for(i=0;i<num;i++){
+        e[i].get_details();
+    }
+    for(i=0;i<num;i++){
+    e[i].print_bill();}
+    return 0;
+}
