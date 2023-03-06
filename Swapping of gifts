@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+class Friends{
+    public:void Gifts(){
+        int i,num,a,b[100];
+        cin>>num;
+        for(i=1;i<=num;i++){
+            cin>>a;
+            b[a]=i;
+        }
+        for(i=1;i<=num;i++){
+            cout<<b[i]<<" ";
+        }
+    }
+};
+int main()
+{Friends Sharing;
+    Sharing.Gifts();
+	return 0;
+}
