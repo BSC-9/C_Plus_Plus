@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+class Olympic{
+    public:
+    void distance(int d,int e){
+        cout<<d+e<<" meters\n";
+    }
+    void distance(int a,int b,int c){
+        cout<<a+b+c<<" meters";
+    }
+};
+int main()
+{   
+    int D1,D2,D3,D4,D5;
+    Olympic Medal;
+    cin>>D1>>D2>>D3>>D4>>D5;
+    Medal.distance(D1,D2);
+    Medal.distance(D3,D4,D5);
+	return 0;
+}
