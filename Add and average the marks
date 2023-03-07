@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+class student{
+    public:
+    int num,m1,m2,m3,m4,m5,lab;
+};
+class laboratory{
+    public:
+    int tt,av;
+};
+class marklist:public student,public laboratory{
+    public:
+    void get(){
+        cin>>num;
+        cin>>m1>>m2>>m3>>m4>>m5;
+        cin>>lab;
+    }
+    void labmark(){
+        tt=m1+m2+m3+m4+m5+lab;
+        av=tt/6;
+    }
+    void display(){
+        cout<<num<<endl<<tt<<endl<<av;
+    }
+};
+int main()
+{   marklist obj;
+    obj.get();
+    obj.labmark();
+    obj.display();
+return 0;
+}
