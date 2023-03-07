@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class Student{
+   public:
+   int num;
+};
+class Test :public Student{
+};
+class Result :public Test{
+    public:
+    void accept(){
+       cin>>num;
+   }
+    void check(){
+        (num<60)?(cout<<"You have failed"):(cout<<"You have passed");
+    }
+   void print(){};   
+};
+int main()
+{   Result r;
+    r.accept();
+    r.check();
+    r.print();
+
+	return 0;
+}
