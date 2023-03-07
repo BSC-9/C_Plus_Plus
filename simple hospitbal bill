@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+class Hospital{
+  public:
+  void bill(int mdeicinebill,int days){
+      cout<<mdeicinebill*days<<"\n";
+  }
+};
+int main()
+{   Hospital ob;
+int mdeicinebill,days,roomrent;
+cin>>mdeicinebill>>days>>roomrent>>days;
+    ob.bill(mdeicinebill,days);
+    ob.bill(roomrent,days);
+	return 0;
+}
