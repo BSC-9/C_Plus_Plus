@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class Assignement{
+      public:
+      int num;
+};
+class Student:public Assignement{
+    public:
+    void get(){
+          cin>>num;
+      }
+    void display(){
+        int count=0;
+        while(num!=0){
+            num/=10;
+            count++;
+        }
+        cout<<count;
+    }
+};
+int main()
+{   Student obj;
+    obj.get();
+    obj.display();
+
+	return 0;
+}
