@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+class Attendance{
+  public:
+  Attendance(){cout<<"No Attendance"<<endl;}
+  Attendance(string studentname){
+      cout<<"Hello "<<studentname;
+  }
+};
+int main()
+{   string studentname;
+cin>>studentname;
+    Attendance stdabs; 
+    Attendance stdpst(studentname);
+	return 0;
+}
